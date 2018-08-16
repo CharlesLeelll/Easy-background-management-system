@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Delete User</title>
+		
+		<style type="text/css">
+		
+			body{
+				background: url("Values/wall.jpg");
+			}
+			.button {
+				color: black;
+				background: rgba(255, 255, 255, 0);
+				width: 80px;
+				height: 20px;
+				border: 1px;
+				font-weight: bold;
+			}	
+			input {
+				background: rgba(255, 255, 255, 0.4);
+			}
+			#div_0 {
+				text-align: center;
+				position: relative;
+			}
+			#button_img {
+				width: 28px;
+				height: 28px;
+				background: rgb(255, 255, 255, 0);
+				border: 0px;
+				position: relative;
+				left: -8px;
+			}
+			#div_img {
+				position: absolute;
+				top: 0px;
+				overflow: hidden;
+			}
+		</style>
+		
+		<script type="text/javascript">
+		
+			function back() {
+
+				history.back();
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="div_0">
+			<h1>Delete User.</h1><br />
+			<form action="UserServlet?actionType=delete" method="post">
+				ID:<input type="text" name="id"><br>
+				<button type="submit" value="Delete" class="button">Delete</button>
+				<button type="reset" value="Reset" class="button">Reset</button>
+			</form>
+		</div>
+		
+		<div id="div_img">
+			<button onclick=back() id="button_img"><img src="Values/left.jpg"></button>
+		</div>
+	</body>
+</html>
